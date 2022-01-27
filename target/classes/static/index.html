@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="index.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<h1>Bestilling av kinobiletter</h1>
+Velg film:
+<select id="film">
+    <option>Velg film her</option>
+    <option>Snehvit og de syv dvergene</option>
+    <option>Toy Story</option>
+    <option>Løvenes konge</option>
+    <option>Shrek</option>
+    <option>Aladdin</option>
+    <option>Istid</option>
+</select>
+<small id="filmFeil" class="form-text text-muted" ></small>
+<br/>
+<tle>
+    <div class="form-group">
+        <label for="Antall">Antall</label>
+        <input type="text" class="form-control" id="antall">
+        <small id="antallFeil" class="form-text text-muted" ></small>
+    </div>
+
+    <div class="form-group">
+        <label for="Fornavn">Fornavn</label>
+        <input type="text" class="form-control" id="fornavn">
+        <small id="fornavnFeil" class="form-text text-muted" ></small>
+    </div>
+
+
+    <div class="form-group">
+        <label for="Etternavn">Etternavn</label>
+        <input type="text" class="form-control" id="etternavn">
+        <small id="etternavnFeil" class="form-text text-muted" ></small>
+    </div>
+
+    <div class="form-group">
+        <label for="Telefonnr">Telefonnr</label>
+        <input type="text" class="form-control" id="telefonnr">
+        <small id="telefonnrFeil" class="form-text text-muted" ></small>
+
+        <div class="form-group">
+            <label for="Epost">Epost</label>
+            <input type="text" class="form-control" id="epost">
+            <small id="epostFeil" class="form-text text-muted" ></small>
+        </div>
+
+        <button onclick="reg()" class="btn btn-primary">Kjøp billett</button>
+
+        <table>
+            <h3>Alle billetter</h3>
+            <div id="alleBillettene"></div>
+            <button onclick="slettAlle()" class="btn btn-danger">Slett alle billettene</button>
+</body>
